@@ -9,6 +9,7 @@ The exam is individual and talking will not be tolerated.
 - Understand how binary works
 - Understand binary place relationships
 - Adding Two Binary numbers
+- Two's Complement Binary
 - Signed Magnitude numbers
 
 ## Hexadecimal Numbers
