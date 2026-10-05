@@ -21,6 +21,7 @@ The exam is individual and talking will not be tolerated.
     - Bold text: <b></b>
     - Italic Text: <i></i>
     - Iframes: <iframe src="url"></iframe>
+    - Styles: <style></style>
     ```
 
 ## Security Concepts:
