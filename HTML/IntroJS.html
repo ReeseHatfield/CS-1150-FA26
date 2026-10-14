@@ -11,13 +11,49 @@
 		// alert(3.1415);
 		// alert(true);
 		// alert(false);
+
 		// alert(3 + 1);
 		// alert(3 * 2);
 		// alert(3 - 2);
 		// alert(4 / 2);
 		// alert("Hello");
 
-		document.write("<h1>Hello world!</h1>");
+		// var favNumber; // declaration
+		// // var favNumber2;
+
+		// favNumber = 7; // assignment
+
+		// var favNumber = 7;
+		// alert(favNumber);
+
+		// always returns a string
+		var favNumber = prompt("What is your favorite number?");
+		// 
+		favNumber = parseInt(favNumber); 
+
+		var leastFavNumber = 11;
+
+		// number + number
+		// but instead string + number
+		// which ends as string concatentation 
+		var sum = favNumber + leastFavNumber;
+
+
+		// = -> assignment operator 
+		
+		// favNumber get converted into a string
+		alert("Your favorite number was: " + favNumber);
+		alert("Your least favorite number was: " + leastFavNumber);
+		alert("The sum was: " + sum);
+
+		// var favWord = "pizza";
+		var favWord = prompt("What is your favorite word?")
+
+		alert("Your favorite word is " + favWord);
+		
+
+
+		document.write("<h1>" + favWord +"</h1>");
 		document.write("<ul>");
         document.write("<li>first things</li>")
         document.write("<li>second things</li>")
