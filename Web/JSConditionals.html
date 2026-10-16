@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>	
+
+    <h1>Your BMI was:</h1>
+
+	<script>
+        // considering what variables you'll need
+        // want
+
+        // pseudo-code
+        var heightInMeters = prompt("Enter your height in meters");
+        var weightInKilograms = prompt("Enter your weight in kilograms");
+
+        heightInMeters = parseFloat(heightInMeters);
+        weightInKilograms = parseFloat(weightInKilograms);
+
+        var heightSquared = heightInMeters * heightInMeters;
+        // do some math
+
+        var bmi = weightInKilograms / heightSquared;
+
+        if(heightInMeters > 6){
+            alert("You are very tall!");
+        }
+
+
+
+        var isFourMetersTall = heightInMeters == 4;
+
+        if(isFourMetersTall){ // if(true) or if(false)
+            alert("You are EXACTLY 4 meters tall");
+        }
+        else if(heightInMeters == 5){
+            alert("You are EXACTLY 5 meters tall");
+        }
+        else {
+            alert("You are NOT exactly 4 meters tall");
+        }
+        // if(heightInMeters != 4){ // if(true) or if(false)
+        //     alert("you are NOT EXACTLY 4 meters tall");
+        // }
+
+
+        var isShort = heightInMeters < 1;
+        if(isShort){
+            alert("You are very short");
+            var temp = 5;
+            alert(temp);
+        }
+
+        
+        // print back out to the user
+        document.write("<h3><i>" + bmi +"</i></h3")
+	</script>
+</body>
+</html>
