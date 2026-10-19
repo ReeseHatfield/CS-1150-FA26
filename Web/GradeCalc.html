@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<script>
+    // read in maybe a name
+    // read in the grade in the course
+    // Convert numeric grade into letter grade (78 -> C)
+    // If your name is Bob, you will always get B
+
+    var name = prompt("Enter your name:");
+    var numericGrade = prompt("Enter your grade:");
+    numericGrade = parseFloat(numericGrade); // numericGrade is now a Number
+    
+    
+    var letterGrade = "F";
+    
+    if(numericGrade >= 90){
+        letterGrade = "A";
+    }
+    else if(numericGrade >= 80){
+        letterGrade = "B";
+    }
+    else if(numericGrade >= 70){
+        letterGrade = "C";
+    }
+    else if(numericGrade >= 60){
+        letterGrade = "D";
+    }
+    else {
+        letterGrade = "F";
+    }
+
+    if(name === "Bob"){
+        letterGrade = "B";
+    }
+
+    
+    document.write("Your letter grade was: " + letterGrade);
+
+    </script>
+
+</body>
+</html>
