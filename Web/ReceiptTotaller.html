@@ -8,15 +8,50 @@
 <body>
 	<script>
         
-        
+    
+        var numItems = prompt("How many items did you buy?");
+        numItems = parseInt(numItems);
+
         var priceTotal = 0;
 
-        while(true){
+
+        // var numItemsEntered = 0; // X
+
+        // while(numItemsEntered < numItems){  // X
+
+        //     var curItemPrice = prompt("Enter item price:");
+        //     curItemPrice = parseFloat(curItemPrice);
+        //     priceTotal = priceTotal + curItemPrice;
+        //     alert("Current Total: " + priceTotal);
+
+        //     numItemsEntered = numItemsEntered + 1; // X
+        // }
+
+
+        // run this body of code numItems many times
+        for(var i = 0; i < numItems; i = i + 1){ // i++
+
             var curItemPrice = prompt("Enter item price:");
             curItemPrice = parseFloat(curItemPrice);
             priceTotal = priceTotal + curItemPrice;
             alert("Current Total: " + priceTotal);
         }
+
+        // 0 < 10 ? -> yes -> execute body
+        // ...
+        // 2 < 10 ? -> yes -> execute body
+        // 10 < 10 ? -> no -> stop
+        // for(var i = 0; i < 10; i = i + 2){
+        //     document.write(i);
+        //     document.write("<br>")
+        // }
+
+        // for(var i = 20; i >= 0; i = i - 2){
+        //     document.write(i);
+        //     document.write("<br>")
+
+        // }
+
 
         // while(true){
         //     alert("Hello world");
