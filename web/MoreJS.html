@@ -1,0 +1,80 @@
+<!-- Number guessing game -->
+
+<!-- determine a number -->
+
+<!-- Have the user enter a guess -->
+<!-- Provide feedback -->
+<!-- e.g higher or lower -->
+<!-- Repeat this until they guess the number -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+</head>
+<body>
+    <script>
+        alert("Welcome to my guessing game!");
+
+
+
+        var maxNum = prompt("What is the max number you want to guess?");
+        maxNum = parseInt(maxNum);
+
+        var secretNum = Math.floor(Math.random() * maxNum);
+
+        document.write("<h1> Welcome to the guessing game </h1>");
+        document.write("<h2> Number was: " + secretNum + " </h2>");
+        document.write("<ol>");
+
+        
+        // number => we want a number
+        // boolean
+        // string => guess is currently a string
+
+        var hasGuessedCorrect = false;
+
+        while(!hasGuessedCorrect){
+
+            var guess = prompt("Enter a guess:");
+            guess = parseInt(guess);
+            
+            // guess < secretNum => evaluate boolean
+            // a true or a false
+            
+            if(guess < secretNum) {
+                alert("Go higher!");
+            }
+            else if (guess > secretNum){
+                alert("Go lower!");
+            }
+            else {
+                // they must be equal
+                alert("You got it");
+                hasGuessedCorrect = true;
+            }
+
+            document.write("<li> Guessed " + guess + "</li>")
+
+        }
+
+        document.write("</ol>");
+
+
+
+
+
+
+
+        // alert("Guess was " + guess);
+
+        
+
+
+    </script>
+
+	
+</body>
+</html>
